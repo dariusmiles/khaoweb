@@ -41,9 +41,10 @@ public class PageController extends HttpServlet
     // Use "response" to specify the HTTP response line and headers
     // (e.g. specifying the content type, setting cookies).
 	  
-  
+	response.setContentType("text/html");
     PrintWriter out = response.getWriter();
     // Use "out" to send content to browser
+    out.println("<html><head><title>Home - Khaoweb</title></head></body>");
     out.println("<h1>HELLO</h1>");
     out.println("<p>" + "TEST" + "</p>");
     String query = "SELECT * FROM course";
@@ -70,7 +71,7 @@ public class PageController extends HttpServlet
 			rs.close();
 		}
 			
-		
+		out.println("</body></html>");
 	} catch (NamingException e) {
 		// TODO Auto-generated catch block
 		e.printStackTrace();
