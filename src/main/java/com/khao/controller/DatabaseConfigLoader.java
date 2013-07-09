@@ -18,6 +18,7 @@ public class DatabaseConfigLoader implements ServletContextListener {
 		ServletContext context = event.getServletContext();
 		//TODO: instead of setting all properties individually, set them as
 		//a single object in a context attribute
+		/*
 		String configFilePath = "C:/Users/alejkb/workspace/khaoweb/src/main/resources/db.properties";
 		Properties prop = new Properties();
 		
@@ -36,6 +37,7 @@ public class DatabaseConfigLoader implements ServletContextListener {
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
+		*/
 	}
 
 }

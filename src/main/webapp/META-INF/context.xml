@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Context>
+	<!-- 
+	<Resource name="jdbc/khaoweb"
+		auth="Container"
+		type="javax.sql.DataSource"
+		maxActive="20"
+		maxIdle="2"
+		maxWait="10000"
+		driverClassName="com.mysql.jdbc.Driver"
+		username="khao"
+   		password="khao"
+   		url="jdbc:mysql://ec2-23-21-211-172.compute-1.amazonaws.com:3306/khaoweb"
+		validationQuery="SELECT 1"
+        testOnBorrow="true"
+	 />  -->
+	 
+	 <Resource name="jdbc/khaowebdb"
+		auth="Container"
+		type="javax.sql.DataSource"
+		maxActive="20"
+		maxIdle="2"
+		maxWait="10000"
+		driverClassName="com.mysql.jdbc.Driver"
+		url="jdbc:${DATABASE_URL_KHAOWEBDB}"
+		username="${DATABASE_USERNAME_KHAOWEBDB}"
+   		password="${DATABASE_PASSWORD_KHAOWEBDB}"   		
+   		
+		validationQuery="SELECT 1"
+        testOnBorrow="true"
+	 />
+	 
+	 <!--
+	 url="jdbc:mysql://localhost:3306/pwudb"
+		username="root"
+   		password="root"
+	 
+	  url="jdbc:${DATABASE_URL_KHAOWEBDB}"
+		username="${DATABASE_USERNAME_KHAOWEBDB}"
+   		password="${DATABASE_PASSWORD_KHAOWEBDB}" -->
+</Context>
