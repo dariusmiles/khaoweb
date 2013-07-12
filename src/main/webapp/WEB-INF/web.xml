@@ -9,6 +9,8 @@
   <servlet-mapping>
     <servlet-name>hello</servlet-name>
     <url-pattern>/page</url-pattern>
+    <url-pattern>/products</url-pattern>
+    <url-pattern>/home</url-pattern>
   </servlet-mapping>
   <listener>
   	<listener-class>com.khao.controller.DatabaseConfigLoader</listener-class>
