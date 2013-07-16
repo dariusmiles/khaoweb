@@ -2,7 +2,7 @@
 	<h1>Product detail</h1>
 	
 	<div id="product">
-		<img alt="product" src="/khaoweb/images/200x190_FS-E6web.jpg" id="product-detail-image">
+		<img alt="product" src="${pageContext.request.contextPath }/images/200x190_FS-E6web.jpg" id="product-detail-image">
 		<div id="product-info" >
 			<section>
 				<h1>Product name</h1>
