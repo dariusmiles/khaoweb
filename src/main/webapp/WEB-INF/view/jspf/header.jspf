@@ -5,7 +5,6 @@
   	<title>Home - Khaoweb</title>
   	<link href='http://fonts.googleapis.com/css?family=Allura' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath }/stylesheet/default.css"/>
-    <script type="text/javascript"></script>
   </head>
 <body>
 

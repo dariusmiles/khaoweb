@@ -305,3 +305,8 @@ footer h3 {
 .float-left{
 	float: left;
 }
+
+
+iframe {
+	display: none;
+}
