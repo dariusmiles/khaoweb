@@ -1,22 +1,11 @@
 package com.khao.controller;
 
 import java.io.IOException;
-import java.io.PrintWriter;
-import java.sql.Connection;
-import java.sql.PreparedStatement;
-import java.sql.ResultSet;
-import java.sql.SQLException;
-
-import javax.naming.Context;
-import javax.naming.InitialContext;
-import javax.naming.NamingException;
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import javax.sql.DataSource;
-
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -42,12 +31,17 @@ public class PageController extends HttpServlet
 		if(servletPath.equalsIgnoreCase("/products")){
 			logger.debug(requestUrl);
 			logger.debug(servletPath);
-			view = "products";
-			logger.debug("dispatcher ok");
-			
+			view = "/WEB-INF/view/products";
+			logger.debug("dispatcher ok");	
 		}
 		else if(servletPath.equalsIgnoreCase("/home")){
 			view = "index";
+		}
+		else if(servletPath.equalsIgnoreCase("/checkout")){
+			view= "checkout";
+		}
+		else if(servletPath.equalsIgnoreCase("/product_detail")){
+			view= "/WEB-INF/view/product_detail";
 		}
 		
 		view = view + ".jsp";
@@ -55,4 +49,13 @@ public class PageController extends HttpServlet
 		RequestDispatcher rd = request.getRequestDispatcher(view);
 		rd.forward(request, response);
   }
+
+@Override
+protected void doPost(HttpServletRequest req, HttpServletResponse resp)
+		throws ServletException, IOException {
+	// TODO Auto-generated method stub
+	super.doPost(req, resp);
+}
+
+  
 }

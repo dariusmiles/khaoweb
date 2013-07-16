@@ -14,9 +14,9 @@ import com.khao.model.Category;
 public class CategoryMysql implements CategoryDao {
 	
 	private Properties dbproperties;
-	private final String insertCategory = "";
-	private final String updateCategory = "";
-	private final String deleteCategory = "";
+	private final String insertCategory = "INSERT INTO category values(?,?)";
+	private final String updateCategory = "UPDATE category SET name = ? WHERE id = ?";
+	private final String deleteCategory = "DELETE category WHERE id=?";
 	private final String find = "SELECT * FROM category WHERE id = ?";
 	private final String findAll = "SELECT * FROM category";
 

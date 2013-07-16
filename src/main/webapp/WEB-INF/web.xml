@@ -10,11 +10,21 @@
     <servlet-name>hello</servlet-name>
     <url-pattern>/page</url-pattern>
     <url-pattern>/products</url-pattern>
+    <url-pattern>/product_detail</url-pattern>
     <url-pattern>/home</url-pattern>
   </servlet-mapping>
   <listener>
   	<listener-class>com.khao.controller.DatabaseConfigLoader</listener-class>
   </listener>
+  
+  <jsp-config>
+  	<jsp-property-group>
+  		<url-pattern>/index.jsp</url-pattern>
+  		<url-pattern>/WEB-INF/view/*</url-pattern>
+  		<include-prelude>/WEB-INF/view/jspf/header.jspf</include-prelude>
+  		<include-coda>/WEB-INF/view/jspf/footer.jspf</include-coda>
+  	</jsp-property-group>
+  </jsp-config>
   
   	<resource-ref>
 		<description>MySQL datasource description</description>

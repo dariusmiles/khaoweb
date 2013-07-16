@@ -1,0 +1,234 @@
+body{
+	margin: 0 auto;
+	width: 940px;
+	font: 13px/22px Helvetica, Arial, sans-serif;
+	background-color: #F0F0F0;
+}
+
+h1, h2 {
+	font-size: 28px;
+	line-height: 44px;
+	padding: 22px 0;
+}
+
+h3 {
+	font-size: 18px;
+	line-height: 22px;
+	padding: 11px 0;
+}
+
+p {
+	padding-bottom: 22px;
+}
+nav{
+	width: 100%;
+	min-width: 940px;
+	background-color: #7C1F7C;
+	position: absolute;
+	left: 0;
+}
+
+	nav ul{
+		margin: 0 auto;
+		width: 940px;
+		overflow: visible;
+	}
+
+	nav ul li{
+		float: left;
+		position: relative;
+	}
+		nav ul li a{
+			display: block;
+			margin-right: 20px;
+			width: 140px;
+			font-size: 14px;
+			line-height: 44px;
+			text-align: center;
+			text-decoration: none;
+			color: #FFF;
+		}
+		
+		nav ul li ul{
+			border-top: 1px solid #6C006C;
+			display: none;
+			position: absolute;
+			background-color: #7C1F7C;
+			z-index: 1;
+			width: 140px;
+		}
+		
+			nav ul li ul li{
+				display: block;
+			}
+			nav ul li ul li:hover a{
+				background-color: #6C006C	;
+				color: #FFF;
+			}
+		nav ul li:hover ul{
+			display: block;
+		}
+		
+		nav ul li:hover a{
+			font-weight: bold;
+		} 
+
+#intro{
+	color: #7C1F7C;
+	position: relative;
+	margin-top: 10px;
+	width: 100%;
+	height: 400px;
+	background: url("../images/purple_flower_scale940.jpg"); /*#67E667*/
+	clear: both;
+	border-radius: 5px;
+}
+
+#store-offerings{
+	position: relative;
+	margin-top: 20px;
+	width: 100%;
+	height: 250px;
+	 
+}
+
+#featured{
+	width: 45%;
+	height: 200px;
+	float: left;
+	margin-right: 70px;
+	margin-left: 0;
+	/*background-color: #67E667;*/
+	color: #008500;
+	border: 1px solid #008500;
+	
+}
+
+#best-seller{
+	width: 45%;
+	height: 200px;
+	float: left;
+	/*background-color: #FFE773;*/
+	color: #A68900;
+	border: 1px solid #A68900;
+}
+	#best-seller section{
+		padding: 0;
+	}
+
+	#best-seller h2{
+		padding: 0;
+		border: 1px solid black;
+	}
+	
+	#best-seller p{
+		padding: 0;
+		border: 1px solid black;
+	}
+
+footer{
+	position: absolute;
+	left: 0;
+	width: 100%;
+	min-width: 940px;
+	background-color: #7C1F7C;
+}
+
+	footer div{
+		display: table;
+		margin: 0 auto;
+		padding: 44px 0;
+		width: 940px;
+	}
+	
+	footer div section{
+		display: table-cell;
+		width: 300px;
+	}
+	
+	footer div #about, footer div #blogroll {
+			padding-right: 20px;
+	}
+		
+	footer h3 {
+		color: #FFF;
+	}
+	
+	footer a {
+		color: #D235D2;
+	}
+	
+	footer a:hover {
+		color: #FFF;
+		text-decoration: none;
+	}
+
+	footer ul {
+		margin: 0 0 0 40px;
+		list-style: square;
+		color: #565656;
+	}
+	
+		footer ul li a {
+			display: block;
+		}
+		
+		
+#logo{
+	font-family: 'Allura', cursive;
+	font-size: 40px;
+	color: #6C006C;
+}
+
+#sidebar{
+	position: relative;
+	width: 300px;
+	margin-top: 66px;
+	border: 1px solid black;
+}
+
+#main{
+	width: 600px;
+	height: 300px;
+}
+
+#wrapper{
+	overflow: visible;
+	border: 1px solid gray;
+	background-color: white;
+	margin-top: 50px;
+	margin-bottom: 20px;
+	padding-left: 10px;
+	padding-right: 10px;
+	border-radius: 5px;
+	box-shadow: 5px 5px 5px black;
+}
+
+#product-container{
+	width: 940px;
+	border: 1px solid black;
+	position: relative;
+	height: 900px;
+}
+
+
+#product-list{
+	width: 800px;
+	float: left;
+	border: 1px solid black;
+	overflow: visible;
+	position: relative;
+}
+#product-filter{
+	float: left;
+	width: 100px;
+	border: 1px solid black;
+}
+
+.product-item{
+	width: 250px;
+	height: 150px;
+	background-color: gray;
+	float: left;
+	margin: 3px;
+}

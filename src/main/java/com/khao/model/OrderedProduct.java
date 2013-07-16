@@ -1,7 +1,7 @@
 package com.khao.model;
 
 public class OrderedProduct {
-	private int customerId;
+	private int orderId;
 	private int productId;
 	private int quantity;
 	
@@ -9,12 +9,12 @@ public class OrderedProduct {
 		super();
 	}
 
-	public int getCustomerId() {
-		return customerId;
+	public int getOrderId() {
+		return orderId;
 	}
 
-	public void setCustomerId(int customerId) {
-		this.customerId = customerId;
+	public void setOrderId(int customerId) {
+		this.orderId = customerId;
 	}
 
 	public int getProductId() {
